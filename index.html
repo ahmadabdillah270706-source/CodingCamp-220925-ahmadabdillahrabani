@@ -1,1 +1,153 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - ABDILLAH</title>
+
+  <!-- CSS External -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="main-header sticky top-0 bg-white shadow-md z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="flex gap-4">
+          <li><a class="hover:text-blue-600" href="#home">Home</a></li>
+          <li><a class="hover:text-blue-600" href="#profile">Our Profile</a></li>
+          <li><a class="hover:text-blue-600" href="#portfolio">Portfolio</a></li>
+          <li><a class="hover:text-blue-600" href="#message-us">Message Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Profil + Judul -->
+      <div class="flex items-center gap-3">
+        <img src="WhatsApp Image 2025-09-15 at 14.42.11_c5791c18.jpg" alt="Foto Abdillah"
+          class="w-12 h-12 rounded-full border-2 border-blue-500 object-cover">
+        <span class="text-xl font-bold text-blue-600">Abdillah Portfolio</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <!-- Home Section -->
+    <section id="home"
+      class="min-h-[100vh] flex flex-col justify-center items-center gap-6 bg-gradient-to-r from-blue-50 to-blue-100 text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-extrabold">Hai <span id="username" class="text-blue-600"></span>, Selamat Datang!</h1>
+      <p class="text-lg text-gray-600 max-w-2xl">Ini adalah beranda portofolio saya. Silakan jelajahi profil, karya, dan hubungi saya jika ada pertanyaan.</p>
+    </section>
+    <hr/>
+
+    <!-- Profile Section -->
+    <section id="profile" class="min-h-[100vh] py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+
+        <!-- Banner -->
+        <div class="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden shadow-lg">
+          <img src="https://picsum.photos/1200/400" alt="Profile Banner" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white">My Profile</h2>
+          </div>
+        </div>
+
+        <!-- Tentang Saya -->
+        <div class="mt-8">
+          <h3 class="text-2xl font-bold text-blue-600 mb-4">Tentang Saya</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Halo, saya <span class="font-semibold">Ahmad Abdillah</span>, seorang mahasiswa Informatika yang memiliki minat
+            besar dalam pengembangan perangkat lunak, kecerdasan buatan, dan machine learning. Saya senang belajar
+            teknologi baru, membangun aplikasi, serta mengeksplorasi solusi inovatif untuk berbagai permasalahan.
+          </p>
+        </div>
+
+        <!-- Tujuan & Harapan -->
+        <div class="grid md:grid-cols-2 gap-8 mt-8">
+          <div>
+            <h3 class="text-2xl font-bold text-blue-600 mb-4">Tujuan</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Menjadi seorang <span class="font-semibold">Software Engineer</span> sekaligus
+              <span class="font-semibold">AI & Machine Learning Engineer</span> yang mampu menghadirkan solusi teknologi
+              bermanfaat bagi masyarakat luas.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-blue-600 mb-4">Harapan / Misi</h3>
+            <ul class="list-disc pl-5 text-gray-700 space-y-2">
+              <li>Menguasai berbagai bahasa pemrograman dan framework modern.</li>
+              <li>Mendalami bidang Artificial Intelligence & Machine Learning.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr/>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="min-h-[100vh] py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-blue-600 mb-6 text-center">Portfolio</h2>
+        <p class="text-lg text-gray-600 text-center mb-10">Berikut adalah beberapa karya yang pernah saya kerjakan.</p>
+
+        <!-- Grid Portfolio -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-6 bg-white rounded-lg shadow hover:shadow-md transition">
+            <h3 class="font-semibold text-lg">Proyek 1</h3>
+            <p class="text-sm text-gray-600">Coming Soon</p>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow hover:shadow-md transition">
+            <h3 class="font-semibold text-lg">Proyek 2</h3>
+            <p class="text-sm text-gray-600">Coming Soon</p>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow hover:shadow-md transition">
+            <h3 class="font-semibold text-lg">Proyek 3</h3>
+            <p class="text-sm text-gray-600">Coming Soon</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr/>
+
+    <!-- Message Us Section -->
+    <section id="message-us" class="min-h-[100vh] py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-blue-600 text-center mb-6">Message Us</h2>
+        <form class="max-w-md mx-auto">
+          <div class="mb-4">
+            <label for="name" class="block mb-2 font-medium">Name:</label>
+            <input type="text" id="name" name="name" class="border w-full p-3 rounded-lg" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block mb-2 font-medium">Email:</label>
+            <input type="email" id="email" name="email" class="border w-full p-3 rounded-lg" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block mb-2 font-medium">Message:</label>
+            <textarea id="message" name="message" class="border w-full p-3 rounded-lg h-28" required></textarea>
+          </div>
+          <button type="button" onclick="validateForm()"
+            class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center p-6 mt-10">
+    <p>Abdillah Portfolio. All rights reserved.</p>
+  </footer>
+
+  <!-- JS External -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
